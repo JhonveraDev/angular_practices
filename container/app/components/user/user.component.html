@@ -1,0 +1,15 @@
+<!--Un Contenedor de Angular para evitar varios condicionales-->
+<ng-container *ngIf="!isLogged; else logueado">
+    <button (click)="isLogged=true">Iniciar Sesi&oacute;n</button>
+    <button>Registrarse</button>
+</ng-container>
+
+<ng-template #logueado>
+    <button>Ir a Administracci&oacute;n</button>
+    <button>Ir a mi Perfil</button>
+    <button (click)='isLogged=false'>Cerrar Sesi&oacute;n</button>
+</ng-template>
+<button (click)="nivel = nivel + 1">Incremento de Nivel</button>
+<div>{{nivel}}</div>
+<button *ngIf="nivel >= 10">NIVEL VIP</button>
+

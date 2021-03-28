@@ -1,0 +1,11 @@
+<h1>Nosotros</h1>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, dolore! Magni asperiores blanditiis repellendus enim reprehenderit fugit provident temporibus rem aperiam rerum. Pariatur culpa adipisci minus aut odit ut saepe, quae exercitationem odio obcaecati dolores autem quisquam, omnis architecto doloremque officia cupiditate necessitatibus, dolorem repudiandae? Quod suscipit, cum veniam nulla nostrum earum pariatur voluptates alias? Enim similique quaerat velit ex sunt dicta amet qui expedita rerum corrupti. Placeat natus animi voluptate ea magni quidem adipisci ipsa veritatis laudantium, eveniet dolore.</p>
+
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let recorrido of equipo, index as i " aria-current="true">
+      <h6>Nombre: {{recorrido.nombre | uppercase}}</h6>
+      <h6>Especialidad: {{recorrido.especialidad}}</h6>
+      <h6>Descripción: {{recorrido.descripcion}}</h6>
+      <a href="#">Leer Más...</a>
+    </li>
+  </ul>

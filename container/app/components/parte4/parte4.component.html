@@ -1,0 +1,11 @@
+<button [disabled]="desactivado">Titulo</button>
+
+<button (click)="desactivado = !desactivado" >Cambiar</button>
+<h1>Has seleccionado: {{seleccion}}</h1>
+
+<select [(ngModel)]="seleccion">
+<!-- <select [value]="seleccion" (change)="seleccion = $event.target.value"> -->
+    <option value ="toyota"> Toyota</option>
+    <option value ="mercedes"> Mercedes</option>
+    <option value ="kawasaki"> Kawasaki</option>
+</select>
